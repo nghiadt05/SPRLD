@@ -1,0 +1,2 @@
+#!/usr/bin/env fish
+/usr/bin/g++ -O3 -std=c++11 -o ./main ./*.cpp -lm

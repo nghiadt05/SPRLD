@@ -1,0 +1,5 @@
+#!/usr/bin/env fish
+rm -r ../../bin/
+mkdir ../../bin
+mkdir ../../bin/tmp
+#mkdir ../../bin/models
