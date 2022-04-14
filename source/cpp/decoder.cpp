@@ -574,6 +574,10 @@ void SPRLD(PC &myPC, vector<double> y, vector<uint8_t> &u_hat, double &bestPM)
 			GenPerIdxList.push_back(PerIdxList);
 		}
 
+		// Initially sample the random permutations
+		while (initial_perIndicesVec.size() < myPC.L)
+			initial_perIndicesVec.push_back(GenPerIdxList[myPC.log2N][rand() % GenPerIdxList[myPC.log2N].size()]);
+
 		// Get the left child types
 		for (auto step = 0; step < myPC.FastSC_FHT_FunctionVec.size(); step++)
 		{
@@ -627,10 +631,9 @@ void SPRLD(PC &myPC, vector<double> y, vector<uint8_t> &u_hat, double &bestPM)
 	uint32_t FFidx = 0;
 	std::fill(PM.begin(), PM.end(), 0);
 	curL = myPC.L;
-	while (initial_perIndicesVec.size() < myPC.L)
-		initial_perIndicesVec.push_back(GenPerIdxList[myPC.log2N][rand() % GenPerIdxList[myPC.log2N].size()]);
 	for (auto l = 0; l < myPC.L; l++)
 	{
+		initial_perIndicesVec[l] = GenPerIdxList[myPC.log2N][rand() % GenPerIdxList[myPC.log2N].size()];
 		orgPerIdx[l] = l;
 		for (auto i = 0; i < myPC.N; i++)
 			LLR[l][myPC.log2N][initial_perIndicesVec[l][i]] = y[i];
