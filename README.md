@@ -43,7 +43,7 @@ Where
 --S S: the number of the left-child RM codes that the SP technique is applied to (0&le;S&le;S_max), where S_max is the number of all the left-child nodes. If S>S_max the value of S will be automatically bounded by S_Max,  
 --L L: list size,  
 --P_max T (T&ge;1): the number of constituent SSP-RLD decoders that run in parallel,  
---policy policy: policy indicates either the sequential ("seq") or parallel ("par") implementation of the proposed SP scheme, the specification of the policy will affect the memory and the decoding latency of the proposed decoder.  
+--policy policy: policy indicates either the sequential ("seq") or the parallel ("par") implementation of the proposed SP scheme, the specification of the policy will affect the memory and the decoding latency of the proposed decoder.  
 
 ## Simulation of the Aut-SSC-FHT decoder
 Command to run simulation: "./main --N 512 --K 256 --SNR 1.5,3,0.5 --T_FER 1E-4 --decoder Aut_SSC_FHT --P_max 128 --L 32".  
