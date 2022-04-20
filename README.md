@@ -32,7 +32,7 @@ The C++ source codes are stored in ./source/cpp, while the python code used to g
 "g++ -O3 -std=c++11 -o main *.cpp -lm" 
 3. The codeword permutations are provided in the configuration folder ./config/rmcodes; however, you can generate them again by running the GenPer.py python script.
 
-## Simulation of the proposed decoder
+## Simulation of the proposed SPRLD decoder
 Command to run simulation: "./main --N 512 --K 256 --SNR 1.5,3,0.5 --T_FER 1E-4 --decoder Ens_SPRLD --S 2 --L 4 --P_max 8 --policy seq".
 
 Where  
