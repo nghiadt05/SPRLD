@@ -5,14 +5,7 @@ This package contains the C++ implementation of the successive-permutation (SP) 
 
 Please consider citing this paper if the source code or the ideal of the paper is useful for your research. THANK YOU! :smile:
 
-@misc{doan2021decoding,  
-    &emsp;&emsp;&emsp;title={Decoding Reed-Muller Codes with Successive Codeword Permutations},  
-    &emsp;&emsp;&emsp;author={Nghia Doan and Seyyed Ali Hashemi and Marco Mondelli and Warren J. Gross},  
-    &emsp;&emsp;&emsp;year={2021},  
-    &emsp;&emsp;&emsp;eprint={2109.02122},  
-    &emsp;&emsp;&emsp;archivePrefix={arXiv},   
-    &emsp;&emsp;&emsp;primaryClass={cs.IT}  
-}  
+@ARTICLE{9906098,  author={Doan, Nghia and Hashemi, Seyyed Ali and Mondelli, Marco and Gross, Warren J.},  journal={IEEE Transactions on Communications},   title={Decoding Reed-Muller Codes with Successive Codeword Permutations},   year={2022},  volume={},  number={},  pages={1-1},  doi={10.1109/TCOMM.2022.3211101}}  
 
 In addition, this package also provides the C++ implementations of state-of-the art RM decoders, namely:
 - Automorphism simplified successive-cancellation decoding with fast Hadamard transform (Aut-SSC-FHT) [**Dumer'04**, **Geiselhart'21**] and,
